@@ -1,0 +1,6 @@
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\bin\Debug\Aula_1.exe
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\bin\Debug\Aula_1.pdb
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\obj\Debug\Aula_1.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\obj\Debug\Aula_1.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\obj\Debug\Aula_1.exe
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\obj\Debug\Aula_1.pdb

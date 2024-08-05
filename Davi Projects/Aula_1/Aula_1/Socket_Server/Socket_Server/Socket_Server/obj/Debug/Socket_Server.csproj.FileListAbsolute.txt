@@ -1,0 +1,6 @@
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\bin\Debug\Socket_Server.exe
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\bin\Debug\Socket_Server.pdb
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\obj\Debug\Socket_Server.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\obj\Debug\Socket_Server.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\obj\Debug\Socket_Server.exe
+C:\Users\Aluno\Documents\Davi Projects\Aula_1\Aula_1\Socket_Server\Socket_Server\Socket_Server\obj\Debug\Socket_Server.pdb
