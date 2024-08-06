@@ -1,0 +1,6 @@
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\bin\Debug\thread_test.exe
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\bin\Debug\thread_test.pdb
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\obj\Debug\thread_test.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\obj\Debug\thread_test.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\obj\Debug\thread_test.exe
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\thread_test\thread_test\obj\Debug\thread_test.pdb

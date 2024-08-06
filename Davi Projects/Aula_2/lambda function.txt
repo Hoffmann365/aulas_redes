@@ -1,0 +1,105 @@
+
+namespace thread_test
+{
+    internal class Program
+    {
+        public static void Main(string[] args)
+        {
+            // Cria uma nova thread que executa o método PrintNumbers;
+            Thread thread = new Thread(() => PrintNumbers(1,5,1000));
+            Thread thread2 = new Thread(() => PrintNumbers(1,10,500));
+            // Inicia a thread
+            thread.Start();
+            //Inicia a thread2
+            thread2.Start();
+           
+            // Aguarda a conclusão da thread
+            thread.Join();
+            // Aguarda a conclusão da thread2
+            thread2.Join();
+            
+            Console.WriteLine("Fim do programa");
+        }
+        // Método que será executado pela thread
+        static void PrintNumbers(int x, int y, int z)
+        {
+            // Obtém o identificador da thread atual
+            string threadId = Thread.CurrentThread.ManagedThreadId.ToString();
+
+            for (int i = x; i <=y; i++)
+            {
+                Console.WriteLine($"Thread {threadId} - Número {i}");
+                // Pausa de 1 segundo entre cada número
+                Thread.Sleep(z);
+            }
+        }
+        
+    }
+}
+
+Explique o uso do lambda function no código acima
+
+No código acima, o uso da expressão lambda `() => PrintNumbers(1,5,1000)` e `() => PrintNumbers(1,10,500)` é uma maneira concisa e eficiente de criar um método anônimo para ser executado em uma nova thread. Vou explicar em mais detalhes:
+
+### O que é uma Expressão Lambda?
+
+Uma expressão lambda é uma forma compacta de definir um método anônimo (ou seja, um método sem um nome). Ela é frequentemente usada para passar um bloco de código que pode ser executado posteriormente. No contexto do .NET e C#, lambdas são particularmente úteis quando você precisa definir métodos inline, como em callbacks, manipuladores de eventos, ou, como neste caso, ao iniciar uma nova thread.
+
+
+### Contexto no Código
+
+No seu código, você está criando duas threads, e para cada uma dessas threads, você precisa especificar o método que ela deve executar. Em vez de definir um método separado ou uma classe para cada thread, você usa uma expressão lambda para definir o código a ser executado.
+
+#### Criação da Thread com Lambda
+
+Aqui está o trecho relevante do seu código:
+
+```csharp
+Thread thread = new Thread(() => PrintNumbers(1,5,1000));
+Thread thread2 = new Thread(() => PrintNumbers(1,10,500));
+```
+
+**Explicação:**
+
+- `Thread thread = new Thread(() => PrintNumbers(1,5,1000));`
+  - `() => PrintNumbers(1,5,1000)` é uma expressão lambda.
+  - `()` indica que a lambda não recebe parâmetros.
+  - `=>` separa a lista de parâmetros da expressão lambda do corpo da lambda.
+  - `PrintNumbers(1,5,1000)` é o corpo da expressão lambda e representa o código que será executado pela thread.
+  - Essa lambda cria uma nova instância de `Thread` e indica que a nova thread deve executar o método `PrintNumbers` com os argumentos `1`, `5`, e `1000`.
+
+- `Thread thread2 = new Thread(() => PrintNumbers(1,10,500));`
+  - Da mesma forma, esta lambda especifica que a thread `thread2` deve executar `PrintNumbers` com os argumentos `1`, `10`, e `500`.
+
+### Vantagens do Uso de Lambda
+
+1. **Concisão:** As expressões lambda permitem que você defina o código a ser executado em uma linha, tornando o código mais conciso e legível.
+   
+2. **Inline Definition:** Você pode definir o código que deve ser executado na thread no mesmo lugar onde você cria a thread, o que pode tornar o código mais fácil de entender e manter.
+
+3. **Evita a Necessidade de Métodos Nomeados:** Se você tiver apenas um código simples para passar para a thread, uma expressão lambda evita a necessidade de criar métodos nomeados adicionais.
+
+### Comparação com Outras Abordagens
+
+Se você não usasse uma expressão lambda, poderia ter que criar métodos separados ou uma classe interna para encapsular o código da thread. Aqui está como seria com um método nomeado:
+
+```csharp
+Thread thread = new Thread(PrintNumbers1);
+Thread thread2 = new Thread(PrintNumbers2);
+
+private static void PrintNumbers1()
+{
+    PrintNumbers(1, 5, 1000);
+}
+
+private static void PrintNumbers2()
+{
+    PrintNumbers(1, 10, 500);
+}
+```
+
+Neste caso, você precisaria definir métodos adicionais `PrintNumbers1` e `PrintNumbers2`, o que pode ser menos direto do que usar lambdas.
+
+### Resumo
+
+Em resumo, a expressão lambda no seu código permite que você defina o código que deve ser executado por cada thread de maneira concisa e inline, simplificando a criação e o gerenciamento das threads.

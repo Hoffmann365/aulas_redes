@@ -1,0 +1,6 @@
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\bin\Debug\MultiThreadClient.exe
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\bin\Debug\MultiThreadClient.pdb
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\obj\Debug\MultiThreadClient.csproj.AssemblyReference.cache
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\obj\Debug\MultiThreadClient.csproj.CoreCompileInputs.cache
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\obj\Debug\MultiThreadClient.exe
+C:\Users\Aluno\Documents\Git\aulas_redes\Davi Projects\Aula_2\MultiThreadClient\MultiThreadClient\MultiThreadClient\obj\Debug\MultiThreadClient.pdb
